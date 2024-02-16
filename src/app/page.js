@@ -1,95 +1,123 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import ScrollContainer from './ScrollContainer';
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+const page = () => {
+	return (
+		<ScrollContainer>
+			<div className='hero'>
+				<div
+					data-scroll
+					data-scroll-speed='3'
+					className='copy'>
+					<blockquote>
+						“It’s one thing to make a <span>picture</span> of what a person looks like, it’s another thing to make a <span>potrait</span> of who they are.”
+						<cite>— Paul Caponigro</cite>
+					</blockquote>
+				</div>
+				<div className='image-wrapper'>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fmonochrome-photo-of-woman-3410386.jpg?alt=media&token=112f9717-ef7e-46e1-8952-b3e346f8f008'
+						alt=''
+					/>
+				</div>
+			</div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+			<div
+				className='section-0'
+				data-scroll
+				data-scroll-speed='2'>
+				<p
+					data-scroll
+					data-scroll-direction='horizontal'
+					data-scroll-speed='-2'>
+					Travelling leaves you speechless
+				</p>
+				<p
+					data-scroll
+					data-scroll-direction='horizontal'
+					data-scroll-speed='2'>
+					Then it turns you to a storyteller
+				</p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+				<cite>— Ibn Battuta</cite>
+			</div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+			<div className='section-1'>
+				<div className='image-mask'></div>
+			</div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+			<div className='section-2'>
+				<div
+					id='pinSection'
+					className='pinned-quote'>
+					<blockquote
+						data-scroll
+						data-scroll-sticky
+						data-scroll-target='#pinSection'>
+						“To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.”
+						<cite>— Elliott Erwitt</cite>
+					</blockquote>
+				</div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+				<div className='images-container'>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F666238d6f903c8899fa76789ed59912d.jpg?alt=media&token=fed407c6-a469-43cd-af23-5d7bb36c0f0e'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F24cf1a08cbaabf899d9d9872e20452b6.jpg?alt=media&token=7d44f884-e4dc-4775-b15d-001b9868de38'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F37ff280cdb9a9ff5a8aebb482a7c1b73.jpg?alt=media&token=611f6188-574c-4456-bdd1-c20b2e024b0a'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F81c20e1c1c9e380395bff6ff651fc2e7.jpg?alt=media&token=d0fa44b4-b518-4754-ae1d-929a08972c25'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fb4a0ce2c6d0e9ffd4792561e122bfb1e.jpg?alt=media&token=d32ec2b6-0902-4cb5-ae28-d22c87858407'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fd137584c758fd75b3191220df2934ce9.jpg?alt=media&token=34fcda56-27ea-43f5-a8c0-256783a053f8'
+						alt=''
+					/>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fmonochrome-photo-of-woman-covering-her-eye-2928525.jpg?alt=media&token=34786a3f-935d-4465-9d86-f837967e07cb'
+						alt=''
+					/>
+				</div>
+			</div>
+
+			<div className='section-3'>
+				<div className='image-wrapper'>
+					<img
+						src='https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F0984c01ecccd4282d73a74962ea59889.jpg?alt=media&token=4b859d79-7055-4584-9c0a-b44a2cdd4e66'
+						alt=''
+					/>
+				</div>
+				<div className='copy'>
+					<blockquote
+						data-scroll-speed='3'
+						data-scroll>
+						If a picture is worth a thousand words, words must be priceless
+					</blockquote>
+				</div>
+				<p
+					className='copyright'
+					data-scroll-position='bottom'
+					data-scroll-speed='2'
+					data-scroll>
+					&copy; Layout Explorations, ebinabo, 2020
+				</p>
+			</div>
+		</ScrollContainer>
+	);
+};
+
+export default page;
